@@ -1,41 +1,261 @@
-<button class="menu-button">Menu</button>
+<!DOCTYPE html>
+<html lang="en">
 
-<nav class="nav-menu">
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#decks">Decks</a>
-    <a href="#apparel">Apparel</a>
-    <a href="#about">About</a>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="filters">
-    <button class="filter-btn active" data-category="all">All</button>
-    <button class="filter-btn" data-category="decks">Decks</button>
-    <button class="filter-btn" data-category="shirts">Shirts</button>
-    <button class="filter-btn" data-category="hoodies">Hoodies</button>
-</div>
+    <title>Skate Website</title>
 
-<div class="product-card reveal" data-category="decks">
-    <img src="images/deck1.jpg" alt="Skateboard deck">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <h3>Street Deck</h3>
+<body>
 
-    <p>$59.99</p>
+    <div class="site-container">
 
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-</div>
+        <!-- NAVIGATION -->
+        <header>
+            <nav class="navbar">
 
-<p>
-    Cart:
-    <span id="cart-count">0</span>
-</p>
+                <div class="logo">
+                    SKATE DSM
+                </div>
 
-<h2 id="skate-message"></h2>
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#stories">STORIES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
 
-<footer>
-    © <span id="year"></span> Skate Company
-</footer>
+            </nav>
+        </header>
 
-<script src="script.js"></script>
+
+        <!-- TITLE -->
+        <section class="page-title" id="home">
+            <h1>THE SKATE BLOG</h1>
+        </section>
+
+
+        <!-- FEATURED POSTS -->
+        <section class="posts-section" id="stories">
+
+            <div class="post-grid">
+
+                <article class="post-card">
+
+                    <img src="images/skate1.jpg" alt="Skateboarding">
+
+                    <div class="post-content">
+                        <small>SKATE</small>
+
+                        <h2>BEST STREET SPOTS IN DES MOINES</h2>
+
+                        <p>
+                            Check out some of our favorite local places
+                            to skate and meet the community.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="post-card">
+
+                    <img src="images/skate2.jpg" alt="Skateboard deck">
+
+                    <div class="post-content">
+                        <small>GEAR</small>
+
+                        <h2>HOW TO CHOOSE YOUR FIRST DECK</h2>
+
+                        <p>
+                            Learn about deck sizes, shapes, and setups
+                            for your skating style.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="post-card">
+
+                    <img src="images/skate3.jpg" alt="Skateboard clothing">
+
+                    <div class="post-content">
+                        <small>STYLE</small>
+
+                        <h2>SKATE STYLE ESSENTIALS</h2>
+
+                        <p>
+                            Skateboarding has always influenced fashion,
+                            music and street culture.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="post-card">
+
+                    <img src="images/skate4.jpg" alt="Skate park">
+
+                    <div class="post-content">
+                        <small>COMMUNITY</small>
+
+                        <h2>SUPPORT YOUR LOCAL SKATE SCENE</h2>
+
+                        <p>
+                            Discover local events, shops and organizations
+                            supporting skateboarding.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img src="images/about-skate.jpg" alt="Skateboarding">
+            </div>
+
+            <div class="about-text">
+
+                <h2>ABOUT US</h2>
+
+                <p>
+                    This site is dedicated to skateboarding, street culture,
+                    local skate spots and the people who make the skate
+                    community special.
+                </p>
+
+                <p>
+                    Whether you are new to skating or have been skating
+                    for years, this is a place to discover stories,
+                    products and inspiration.
+                </p>
+
+                <a href="#" class="button">
+                    LEARN MORE
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery-section">
+
+            <div class="section-title">
+                <h2>FOLLOW THE SESSION</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="images/gallery1.jpg" alt="">
+                <img src="images/gallery2.jpg" alt="">
+                <img src="images/gallery3.jpg" alt="">
+                <img src="images/gallery4.jpg" alt="">
+                <img src="images/gallery5.jpg" alt="">
+                <img src="images/gallery6.jpg" alt="">
+
+            </div>
+
+        </section>
+
+
+        <!-- SHOP -->
+        <section class="shop-section" id="shop">
+
+            <div class="section-title">
+                <h2>SHOP THE COLLECTION</h2>
+            </div>
+
+
+            <div class="shop-feature">
+
+                <div class="shop-product">
+
+                    <img
+                        src="images/deck.jpg"
+                        alt="Skateboard deck"
+                    >
+
+                    <h3>STREET DECK</h3>
+
+                    <p>$59.99</p>
+
+                    <button class="shop-button">
+                        SHOP NOW
+                    </button>
+
+                </div>
+
+
+                <div class="shop-image">
+
+                    <img
+                        src="images/skate-banner.jpg"
+                        alt="Skateboarding"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer id="contact">
+
+            <div class="footer-logo">
+                SKATE DSM
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">HOME</a>
+                <a href="#stories">STORIES</a>
+                <a href="#about">ABOUT</a>
+                <a href="#shop">SHOP</a>
+
+            </div>
+
+
+            <div class="newsletter">
+
+                <p>Stay connected with the skate community.</p>
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                >
+
+                <button>
+                    SUBSCRIBE
+                </button>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -627,3 +627,285 @@ footer {
         gap: 30px;
     }
 }
+
+/* =====================================
+   SIDETRACKED WEBSITE LAYOUT FIX
+   ===================================== */
+
+/* GLOBAL RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #556B2F;
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* MAIN WEBSITE CONTAINER */
+
+.site-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #F5F1E7;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.18);
+    overflow: hidden;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    border-bottom: 1px solid #aaa;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-size: 12px;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #556B2F;
+}
+
+/* MAIN PAGE HEADING */
+
+.page-title {
+    text-align: center;
+    padding: 38px 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.page-title h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.page-title p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* CAMPAIGN CONTENT */
+
+.content-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 55px;
+}
+
+.content-section h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+    margin: 0 0 22px;
+}
+
+.content-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 28px 0 8px;
+}
+
+.content-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 0 16px;
+}
+
+/* BENCHMARK TABLE */
+
+.benchmark-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+.benchmark-table th {
+    background-color: #556B2F;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.benchmark-table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    padding: 22px 15px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* ADS SECTION */
+
+.ads-section {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.ads-intro {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* INDIVIDUAL ADVERTISEMENT BOXES */
+
+.ad-item {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 30px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.ad-item h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.ad-item p {
+    font-size: 12px;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.ad-item a {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ad-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ad-item img:hover {
+    transform: scale(1.025);
+}
+
+/* AD DIMENSIONS */
+
+.ad-medium {
+    width: 300px;
+}
+
+.ad-leaderboard {
+    width: 728px;
+}
+
+.ad-skyscraper {
+    width: 160px;
+}
+
+.ad-halfpage {
+    width: 300px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 45px 25px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+}
+
+.footer-logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .site-container {
+        width: 96%;
+        margin: 15px auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .content-section {
+        padding: 35px 22px;
+    }
+
+    .ads-section {
+        padding: 30px 15px;
+    }
+
+    .ad-item {
+        padding: 20px 10px;
+    }
+}

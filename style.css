@@ -946,3 +946,53 @@ footer {
         padding: 15px;
     }
 }
+
+/* PROJECT HIGHLIGHTS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px 7%;
+    background-color: #F5F1E7;
+}
+
+.feature-card {
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+    padding: 35px 30px;
+    transition: 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #556B2F;
+}
+
+.feature-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 6%;
+    }
+}

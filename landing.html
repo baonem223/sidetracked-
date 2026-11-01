@@ -5,8 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>SIDETRACKED | Shop</title>
+
+    <title>SIDETRACKED | Shop Sidetrack</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Landing page specific styles */
+
+        .landing-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            padding: 70px 40px;
+        }
+
+        .landing-hero h1 {
+            font-size: clamp(36px, 5vw, 64px);
+            line-height: 1.05;
+            margin: 15px 0 25px;
+        }
+
+        .landing-hero p {
+            max-width: 480px;
+        }
+
+        .landing-art {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .landing-art img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .landing-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 25px 0 60px;
+        }
+
+        .category-card {
+            padding: 40px 25px;
+            border: 2px solid currentColor;
+            text-align: center;
+        }
+
+        .category-card h3 {
+            font-size: 22px;
+        }
+
+        .category-number {
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .category-card p {
+            margin-bottom: 25px;
+        }
+
+        .landing-promo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            padding: 55px 40px;
+            margin: 40px 0;
+            background: #171717;
+            color: white;
+        }
+
+        .landing-promo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .landing-promo h2 {
+            font-size: clamp(28px, 4vw, 48px);
+            line-height: 1.1;
+        }
+
+        .landing-promo .button {
+            background: white;
+            color: black;
+            display: inline-block;
+            padding: 12px 22px;
+            text-decoration: none;
+        }
+
+        .landing-final {
+            text-align: center;
+            padding: 80px 25px;
+        }
+
+        .landing-final h2 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin: 10px 0;
+        }
+
+        .landing-final p {
+            max-width: 550px;
+            margin: 20px auto 30px;
+        }
+
+        @media (max-width: 750px) {
+            .landing-hero,
+            .landing-promo {
+                grid-template-columns: 1fr;
+                padding: 35px 20px;
+            }
+
+            .landing-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .landing-hero {
+                text-align: center;
+            }
+
+            .landing-hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -16,6 +145,7 @@
     <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
+
             <a href="index.html" class="logo">
                 SIDETRACKED
             </a>
@@ -24,233 +154,179 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="ads.html">ADS</a></li>
                 <li><a href="landing.html">SHOP</a></li>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#visit">ABOUT</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <!-- SHOP BANNER -->
-    <section class="home-banner">
-
-        <a href="#shop">
-            <img
-                src="sidetrack ad2 728x90 v2.jpg"
-                alt="Sidetrack Skate Shop Banner">
-        </a>
-
-    </section>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- MAIN AD LANDING HERO -->
+    <section class="landing-hero">
 
         <div class="hero-text">
 
             <p class="eyebrow">
-                YOUR LOCAL SKATE SHOP
+                AMES, IOWA / LOCAL SKATE SHOP
             </p>
 
-            <h2>
-                SKATE LOCAL.
-                STAY SIDETRACKED.
-            </h2>
+            <h1>
+                YOUR LOCAL
+                SKATE SHOP.
+            </h1>
 
             <p>
-                Skateboarding is more than just a sport.
-                It's a community built around creativity,
-                individuality, and self-expression.
-                Sidetrack Skate Shop brings that culture
-                together through skateboards, streetwear,
-                and original artwork.
+                Skateboards. Streetwear. Skate culture.
+                Discover Sidetrack Skate Shop, your
+                destination for skateboarding gear,
+                original style, and the local skate scene.
             </p>
 
             <a href="#shop" class="button">
-                EXPLORE THE SHOP
+                SHOP NOW
             </a>
+
+        </div>
+
+        <div class="landing-art">
+
+            <img
+                src="sidetrack ad1 300x250.png"
+                alt="Sidetrack Skate Shop campaign artwork">
 
         </div>
 
     </section>
 
-    <!-- SHOP HIGHLIGHTS -->
+    <!-- PRODUCT CATEGORY HEADER -->
     <section class="section-heading" id="shop">
-        <h2>EXPLORE SIDETRACK</h2>
+        <h2>FIND YOUR NEXT SETUP.</h2>
+        <p>
+            Everything starts at your local skate shop.
+        </p>
     </section>
 
-    <section class="card-grid">
+    <!-- PRODUCT CATEGORIES -->
+    <section class="landing-categories">
 
-        <!-- SKATEBOARDS -->
-        <article class="feature-card">
+        <article class="category-card">
 
-            <h3>01 / SKATEBOARDS & GEAR</h3>
+            <span class="category-number">01 /</span>
 
-            <p>
-                Whether you're building your first
-                skateboard or upgrading your current
-                setup, Sidetrack Skate Shop celebrates
-                everything skateboarding. Explore the
-                culture surrounding decks, trucks,
-                wheels, and accessories designed for
-                skateboarders of all experience levels.
-            </p>
-
-        </article>
-
-        <!-- STREETWEAR -->
-        <article class="feature-card">
-
-            <h3>02 / STREETWEAR & STYLE</h3>
+            <h3>SKATEBOARDS</h3>
 
             <p>
-                Skateboarding and fashion go hand in
-                hand. Discover the influence of skate
-                culture on clothing, footwear, and
-                everyday style. Sidetrack embraces
-                individuality and creative expression
-                both on and off the board.
-            </p>
-
-        </article>
-
-        <!-- COMMUNITY -->
-        <article class="feature-card">
-
-            <h3>03 / ART & COMMUNITY</h3>
-
-            <p>
-                Skateboarding is driven by the people
-                behind it. From original artwork and
-                creative collaborations to the local
-                skateboarding scene, Sidetrack represents
-                the connection between skateboarding,
-                art, and community.
-            </p>
-
-        </article>
-
-    </section>
-
-    <!-- FEATURED ADVERTISEMENT -->
-    <section class="about-section">
-
-        <div class="about-image">
-
-            <a href="#visit">
-                <img
-                    src="sidetrack ad1 300x250.png"
-                    alt="Sidetrack Skate Shop Advertisement">
-            </a>
-
-        </div>
-
-        <div class="about-text">
-
-            <h2>
-                SUPPORT YOUR LOCAL SKATE SHOP.
-            </h2>
-
-            <p>
-                Independent skate shops play an
-                important role in keeping local
-                skateboarding communities alive.
-                Supporting Sidetrack means supporting
-                the creativity, culture, and people
-                that make skateboarding unique.
-            </p>
-
-            <p>
-                Whether you're looking for new gear,
-                exploring streetwear, or connecting
-                with the local skate scene, Sidetrack
-                is a place to discover something new.
+                Decks, trucks, wheels, and the
+                essentials for your next setup.
             </p>
 
             <a href="#visit" class="button">
-                LEARN MORE
+                EXPLORE GEAR
             </a>
+
+        </article>
+
+        <article class="category-card">
+
+            <span class="category-number">02 /</span>
+
+            <h3>STREETWEAR</h3>
+
+            <p>
+                Skate-inspired clothing, accessories,
+                and everyday style.
+            </p>
+
+            <a href="#visit" class="button">
+                EXPLORE STYLE
+            </a>
+
+        </article>
+
+        <article class="category-card">
+
+            <span class="category-number">03 /</span>
+
+            <h3>ACCESSORIES</h3>
+
+            <p>
+                Find the smaller essentials and
+                accessories that complete your setup.
+            </p>
+
+            <a href="#visit" class="button">
+                EXPLORE MORE
+            </a>
+
+        </article>
+
+    </section>
+
+    <!-- CAMPAIGN PROMOTIONAL SECTION -->
+    <section class="landing-promo">
+
+        <div class="promo-image">
+
+            <img
+                src="sidetrack ad1 300x250.png"
+                alt="Sidetrack promotional advertisement">
 
         </div>
 
-    </section>
-
-    <!-- VISIT SECTION -->
-    <section class="section-heading" id="visit">
-        <h2>GET SIDETRACKED</h2>
-    </section>
-
-    <section class="card-grid">
-
-        <article class="feature-card">
-
-            <h3>DISCOVER THE SHOP</h3>
-
-            <p>
-                Explore Sidetrack Skate Shop and
-                discover a local business dedicated
-                to skateboarding, streetwear,
-                and creative culture.
-            </p>
-
-            <a
-                href="https://www.google.com/maps/search/?api=1&query=Sidetrack+Skate+Shop+Ames+Iowa"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer">
-                FIND THE SHOP
-            </a>
-
-        </article>
-
-        <article class="feature-card">
-
-            <h3>EXPLORE OUR CAMPAIGN</h3>
-
-            <p>
-                See how our digital advertising
-                campaign promotes Sidetrack Skate
-                Shop through creative visuals,
-                consistent branding, and targeted
-                online advertisements.
-            </p>
-
-            <a href="ads.html" class="button">
-                VIEW ADVERTISEMENTS
-            </a>
-
-        </article>
-
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about-section" id="about">
-
-        <div class="about-text">
+        <div class="promo-text">
 
             <p class="eyebrow">
-                ABOUT SIDETRACKED
+                SUPPORT LOCAL SKATEBOARDING
             </p>
 
-            <h2>BUILT AROUND SKATE CULTURE.</h2>
+            <h2>
+                KEEP SKATE CULTURE LOCAL.
+            </h2>
 
             <p>
-                SIDETRACKED is a digital advertising
-                project created to highlight Sidetrack
-                Skate Shop in Ames, Iowa.
+                Skate shops are more than places
+                to buy gear. They're part of what
+                keeps skateboarding communities
+                connected.
             </p>
 
             <p>
-                Through original advertising designs
-                and a connected website experience,
-                our campaign aims to introduce more
-                people to the shop while celebrating
-                the creativity and community behind
-                skateboarding.
+                Support independent skateboarding,
+                discover new gear, and represent
+                your local scene with Sidetrack.
             </p>
 
-            <a href="index.html" class="button">
-                BACK TO HOME
+            <a href="#visit" class="button">
+                VISIT SIDETRACK
             </a>
 
         </div>
+
+    </section>
+
+    <!-- FINAL CONVERSION SECTION -->
+    <section class="landing-final" id="visit">
+
+        <p class="eyebrow">
+            SIDETRACK SKATE SHOP / AMES, IOWA
+        </p>
+
+        <h2>
+            READY TO GET SIDETRACKED?
+        </h2>
+
+        <p>
+            Whether you're just starting out or
+            you've been skating for years, discover
+            what your local skate shop has to offer.
+        </p>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Sidetrack+Skate+Shop+Ames+Iowa"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer">
+            FIND THE SHOP
+        </a>
 
     </section>
 

@@ -1170,3 +1170,355 @@ footer {
         margin: 0 auto;
     }
 }
+
+
+/* ==========================================
+   SIDETRACKED HOMEPAGE ADVERTISEMENT LAYOUT
+   160x600 WIDE SKYSCRAPER
+   300x600 HALF PAGE
+   ========================================== */
+
+
+/* PROJECT HIGHLIGHTS + SKYSCRAPER AD */
+
+.highlights-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 160px;
+    gap: 30px;
+    align-items: start;
+
+    margin: 40px 7% 60px;
+}
+
+
+/* PROJECT HIGHLIGHTS CONTENT */
+
+.highlights-content {
+    min-width: 0;
+    width: 100%;
+}
+
+
+/* SECTION HEADING WITHIN HIGHLIGHTS */
+
+.highlights-content .section-heading {
+    text-align: center;
+    padding: 22px 15px;
+
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+.highlights-content .section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+
+/* STACK HIGHLIGHT CARDS VERTICALLY */
+
+.highlights-content .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    padding: 30px 0;
+    background-color: transparent;
+}
+
+
+/* PROJECT HIGHLIGHT CARDS */
+
+.highlights-content .feature-card {
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.highlights-content .feature-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #556B2F;
+
+    margin-bottom: 15px;
+}
+
+.highlights-content .feature-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.highlights-content .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+/* 160x600 WIDE SKYSCRAPER AD */
+
+.skyscraper-ad {
+    width: 160px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skyscraper-ad a {
+    display: block;
+    width: 100%;
+}
+
+.skyscraper-ad img {
+    display: block;
+
+    width: 160px;
+    height: 600px;
+
+    max-width: 100%;
+    object-fit: fill;
+
+    transition: transform 0.3s ease;
+}
+
+.skyscraper-ad img:hover {
+    transform: scale(1.025);
+}
+
+
+/* ==========================================
+   300x600 HALF PAGE AD + SHOP PROMOTION
+   ========================================== */
+
+.shop-promotion {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+
+    gap: 55px;
+    align-items: center;
+
+    margin: 50px 7% 70px;
+    padding: 40px;
+
+    background-color: #F5F1E7;
+    border: 1px solid #999;
+}
+
+
+/* HALF PAGE ADVERTISEMENT */
+
+.half-page-ad {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.half-page-ad a {
+    display: block;
+    width: 100%;
+}
+
+.half-page-ad img {
+    display: block;
+
+    width: 300px;
+    height: 600px;
+
+    max-width: 100%;
+    object-fit: fill;
+
+    transition: transform 0.3s ease;
+}
+
+.half-page-ad img:hover {
+    transform: scale(1.025);
+}
+
+
+/* SHOP PROMOTION TEXT */
+
+.shop-promotion-text {
+    min-width: 0;
+}
+
+.shop-promotion-text .eyebrow {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #556B2F;
+    margin-bottom: 15px;
+}
+
+.shop-promotion-text h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: normal;
+    line-height: 1.2;
+
+    color: #171717;
+    margin-bottom: 25px;
+}
+
+.shop-promotion-text p {
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* SHOP NOW BUTTON */
+
+.shop-promotion-text .button {
+    display: inline-block;
+
+    width: fit-content;
+    margin-top: 15px;
+
+    background-color: #222;
+    color: #FFFFFF;
+
+    padding: 14px 25px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.shop-promotion-text .button:hover {
+    background-color: #556B2F;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE LAYOUT
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .highlights-layout {
+        grid-template-columns: minmax(0, 1fr) 160px;
+        gap: 20px;
+        margin: 35px 5%;
+    }
+
+    .highlights-content .feature-card {
+        padding: 25px 20px;
+    }
+
+    .shop-promotion {
+        grid-template-columns: 300px minmax(0, 1fr);
+        gap: 25px;
+
+        margin: 40px 5%;
+        padding: 25px;
+    }
+
+    .shop-promotion-text h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE LAYOUT
+   ========================================== */
+
+@media (max-width: 750px) {
+
+    /* Stack project highlights and ad */
+
+    .highlights-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        margin: 30px 6%;
+    }
+
+    .highlights-content .card-grid {
+        grid-template-columns: 1fr;
+        padding: 25px 0;
+    }
+
+    /* Center skyscraper advertisement */
+
+    .skyscraper-ad {
+        width: 160px;
+        margin: 15px auto 30px;
+    }
+
+    .skyscraper-ad img {
+        width: 160px;
+        height: 600px;
+    }
+
+    /* Stack half page ad and text */
+
+    .shop-promotion {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        margin: 35px 6%;
+        padding: 25px 20px;
+
+        text-align: center;
+    }
+
+    .half-page-ad {
+        width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .half-page-ad img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-promotion-text h2 {
+        font-size: 30px;
+    }
+
+    .shop-promotion-text .button {
+        margin: 15px auto 0;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE SCREENS
+   ========================================== */
+
+@media (max-width: 400px) {
+
+    .highlights-layout {
+        margin: 25px 5%;
+    }
+
+    .highlights-content .feature-card {
+        padding: 22px 18px;
+    }
+
+    .shop-promotion {
+        margin: 25px 5%;
+        padding: 20px 15px;
+    }
+
+    .shop-promotion-text h2 {
+        font-size: 26px;
+    }
+
+}
+

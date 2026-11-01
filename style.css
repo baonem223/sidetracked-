@@ -1536,5 +1536,83 @@ footer {
         font-size: 26px;
     }
 
+    
+/* =====================================
+   FIX ZERO-SIZE HOMEPAGE AD IMAGES
+   ===================================== */
+
+/* SKYSCRAPER AD */
+
+.highlights-layout .skyscraper-ad {
+    display: block;
+    width: 160px;
+    min-width: 160px;
+    height: 600px;
+    min-height: 600px;
+    overflow: visible;
+}
+
+.highlights-layout .skyscraper-ad a {
+    display: block;
+    width: 160px;
+    height: 600px;
+}
+
+.highlights-layout .skyscraper-ad img {
+    display: block;
+    width: 160px;
+    height: 600px;
+    min-width: 160px;
+    min-height: 600px;
+    max-width: none;
+    object-fit: fill;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* HALF-PAGE AD */
+
+.shop-promotion .half-page-ad {
+    display: block;
+    width: 300px;
+    min-width: 300px;
+    height: 600px;
+    min-height: 600px;
+    overflow: visible;
+}
+
+.shop-promotion .half-page-ad a {
+    display: block;
+    width: 300px;
+    height: 600px;
+}
+
+.shop-promotion .half-page-ad img {
+    display: block;
+    width: 300px;
+    height: 600px;
+    min-width: 300px;
+    min-height: 600px;
+    max-width: none;
+    object-fit: fill;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .highlights-layout .skyscraper-ad {
+        margin: 20px auto;
+    }
+
+    .shop-promotion .half-page-ad {
+        margin: 0 auto;
+    }
+
+}
+
+
 }
 

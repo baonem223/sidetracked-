@@ -851,13 +851,29 @@ body {
     width: 728px;
 }
 
-.ad-skyscraper {
+
+/* 160x600 SKYSCRAPER */
+
+.skyscraper-ad img {
+    display: block;
     width: 160px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.ad-halfpage {
+/* 300x600 HALF PAGE */
+
+.half-page-ad img {
+    display: block;
     width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
+
 
 /* FOOTER */
 

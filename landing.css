@@ -196,9 +196,9 @@ h1, h2, h3 {
 /* DINOSAUR ARTWORK */
 .hero-image {
   position: absolute;
-  right: 10;
+  right: 4;
   bottom: 0;
-  width: 42%;
+  width: 38%;
   max-width: 850px;
   z-index: 1;
   display: flex;

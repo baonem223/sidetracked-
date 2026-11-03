@@ -136,9 +136,10 @@ h1, h2, h3 {
 .hero-text {
   position: relative;
   z-index: 2;
-  width: 58%;
-  flex: 0 0 58%;
+  width: 62%;
+  flex: 0 0 62%;
 }
+
 
 .eyebrow {
   font-size: 14px;
@@ -192,26 +193,29 @@ h1, h2, h3 {
   transform: translateY(-3px);
 }
 
-/* DINOSAUR ARTWORK */
+/* DINOSAUR HERO ARTWORK */
 .hero-image {
   position: absolute;
-  right: 4%;
-  bottom: -1px;
-  width: 65%;
+  right: 2%;
+  bottom: 0;
+  width: 30%;
+  max-width: 400px;
   z-index: 1;
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   pointer-events: none;
 }
 
 .hero-image img {
   display: block;
   width: 100%;
-  max-width: none;
   height: auto;
+  max-width: 100%;
+  object-fit: contain;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  object-fit: contain;
 }
 
 /* TABLET */

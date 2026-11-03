@@ -119,19 +119,25 @@ h1, h2, h3 {
 }
 
 
+
 /* HERO SECTION */
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  padding: 75px 6%;
-  min-height: 530px;
+  min-height: 580px;
+  padding: 65px 6%;
   background: linear-gradient(145deg, #ffe826, #ffd52e);
+  overflow: hidden;
 }
 
+/* HERO TEXT */
 .hero-text {
-  flex: 1.2;
+  position: relative;
+  z-index: 2;
+  width: 58%;
+  flex: 0 0 58%;
 }
 
 .eyebrow {
@@ -186,20 +192,75 @@ h1, h2, h3 {
   transform: translateY(-3px);
 }
 
+/* DINOSAUR ARTWORK */
 .hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  right: 4%;
+  bottom: -1px;
+  width: 65%;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
 }
 
 .hero-image img {
+  display: block;
   width: 100%;
-  max-width: 450px;
-  border: 6px solid white;
-  border-radius: 22px;
-  box-shadow: 12px 12px 0 #ff3299;
+  max-width: none;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
 }
 
+/* TABLET */
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 55px 5% 0;
+  }
+
+  .hero-text {
+    width: 100%;
+    flex: none;
+  }
+
+  .hero-text > p:not(.eyebrow) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(80%, 550px);
+    margin: 35px auto 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+  .hero {
+    padding: 45px 5% 0;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
 
 /* CATEGORIES */
 .categories {

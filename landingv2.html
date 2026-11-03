@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidetrack Skate Shop | Skate. Create. Repeat.</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="landing.html" class="logo">
+      <span>SIDETRACK</span>
+      <small>SKATE SHOP</small>
+    </a>
+
+    <nav>
+      <a href="landing.html">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#shop" class="nav-shop">SHOP NOW</a>
+      <button class="cart-button" id="cart-button"
+              aria-label="View shopping cart">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <p class="eyebrow">WELCOME TO SIDETRACK SKATE SHOP</p>
+
+      <h1>RIDE YOUR <span>STYLE!</span></h1>
+
+      <h2>
+        Skateboards, Fingerboards,<br>
+        Clothing, Original Art & More!
+      </h2>
+
+      <p>
+        Find your style and express your creativity.
+        From skateboard decks to unique clothing and
+        original artwork, Sidetrack brings skate culture
+        to life.
+      </p>
+
+      <a href="#shop" class="main-button">SHOP NOW →</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="sidetrack ad1 300x250.png"
+           alt="Sidetrack Skate Shop promotional artwork">
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORY SECTION -->
+  <section class="categories" id="shop">
+
+    <h2>SHOP YOUR STYLE</h2>
+
+    <p class="section-subtitle">
+      Everything you need to skate, create, and repeat.
+    </p>
+
+    <div class="category-grid">
+
+      <a href="#products" class="category-card">
+        <div class="category-icon">🛹</div>
+        <h3>SKATEBOARDS</h3>
+        <p>Decks, wheels, trucks, and more.</p>
+        <span>SHOP NOW →</span>
+      </a>
+
+      <a href="#products" class="category-card">
+        <div class="category-icon">🤙</div>
+        <h3>FINGERBOARDS</h3>
+        <p>Small boards. Big creativity.</p>
+        <span>SHOP NOW →</span>
+      </a>
+
+      <a href="#products" class="category-card">
+        <div class="category-icon">👕</div>
+        <h3>CLOTHING</h3>
+        <p>Streetwear inspired by skate culture.</p>
+        <span>SHOP NOW →</span>
+      </a>
+
+      <a href="#products" class="category-card">
+        <div class="category-icon">🎨</div>
+        <h3>ORIGINAL ART</h3>
+        <p>Creative designs and unique artwork.</p>
+        <span>SHOP NOW →</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROMOTIONAL BANNER -->
+  <section class="promo-banner">
+
+    <div>
+      <h2>NEW ARRIVALS!</h2>
+      <p>Fresh boards, clothing, and original art!</p>
+    </div>
+
+    <a href="#products" class="promo-button">
+      SHOP THE LATEST →
+    </a>
+
+  </section>
+
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products" id="products">
+
+    <h2>FEATURED PRODUCTS</h2>
+
+    <p class="section-subtitle">
+      Check out some of our favorite Sidetrack products.
+    </p>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-picture">🛹</div>
+        <h3>Sidetrack Skate Deck</h3>
+        <p>Custom skateboard deck</p>
+        <div class="price">$64.99</div>
+        <button class="add-cart"
+                data-product="Sidetrack Skate Deck"
+                data-price="64.99">
+          ADD TO CART
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-picture">🤙</div>
+        <h3>Checker Fingerboard</h3>
+        <p>Mini fingerboard</p>
+        <div class="price">$24.99</div>
+        <button class="add-cart"
+                data-product="Checker Fingerboard"
+                data-price="24.99">
+          ADD TO CART
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-picture">👕</div>
+        <h3>Sidetrack Hoodie</h3>
+        <p>Comfortable everyday streetwear</p>
+        <div class="price">$54.99</div>
+        <button class="add-cart"
+                data-product="Sidetrack Hoodie"
+                data-price="54.99">
+          ADD TO CART
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-picture">🎨</div>
+        <h3>Original Art Print</h3>
+        <p>Exclusive Sidetrack artwork</p>
+        <div class="price">$18.99</div>
+        <button class="add-cart"
+                data-product="Original Art Print"
+                data-price="18.99">
+          ADD TO CART
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+
+    <div class="about-content">
+      <h2>MORE THAN JUST A SKATE SHOP.</h2>
+
+      <p>
+        Sidetrack Skate Shop is all about creativity,
+        individuality, and skateboarding culture.
+        Whether you're learning your first trick,
+        collecting fingerboards, or looking for unique
+        streetwear, there's something here for you.
+      </p>
+
+      <h3>SKATE. CREATE. REPEAT.</h3>
+
+      <a href="#shop" class="main-button">
+        EXPLORE THE SHOP →
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER / CALL TO ACTION -->
+  <section class="newsletter" id="contact">
+
+    <h2>STAY SIDETRACKED!</h2>
+
+    <p>
+      Follow the culture. Discover fresh styles.
+      Never stop creating.
+    </p>
+
+    <a href="#shop" class="main-button">
+      START SHOPPING →
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>SIDETRACK SKATE SHOP</h2>
+    <p>SKATE. CREATE. REPEAT.</p>
+    <p>© 2026 Sidetrack Skate Shop. Student project.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Main Website</a>
+      <a href="ads.html">Ad Campaign</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </footer>
+
+
+  <!-- DEMO CART -->
+  <dialog id="cart-dialog" class="cart-dialog">
+    <h2>YOUR CART 🛒</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total"></p>
+    <p class="cart-note">
+      Demonstration only. No real purchases are processed.
+    </p>
+    <button id="close-cart" class="main-button">
+      CONTINUE SHOPPING
+    </button>
+  </dialog>
+
+  <script src="landing.js"></script>
+
+</body>
+</html>
